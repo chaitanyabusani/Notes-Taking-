@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Colored Divs</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release-pro/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .auto-height {
+            height: 450px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="py-3 mb-3 border-bottom">
+        <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
+          <div class="dropdown">
+            <div>
+              <a href="./naman.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-journal-check" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+              </svg></a>
+            </div>
+          </div>
+    
+          <div class="d-flex align-items-center">
+            <form class="w-100 me-3" role="search">
+              <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+  
+          </div>
+        </div>
+      </header>
+
+    <!-- Two Colored Divs -->
+    <div class="container3">
+        <div class="row">
+            <!-- Div 1 on left side -->
+            <div class="col-lg-6 div1">
+                <h1 style="margin: 30px;">Your Notes :</h1>
+                <hr style="margin-left: 30px; width: 300px;">
+                <div id="note-list" class="grid-container">
+                    <!-- Notes will be displayed here -->
+                    
+                </div>
+            </div>
+            <!-- Div 2 on the right side -->
+            <div class="col-lg-6 div2">
+                <br>
+                <div class="input-container grid-svg">
+                    <h3 style="margin-right: 350px;">Write Your Notes : </h3>
+                    <!--Color-->
+
+
+                </div>
+                <br>
+                <div class="input-container">
+                    <input type="text" class="form-control" id="note-title" placeholder="Enter Your Title">
+                    <br>
+                </div>
+                <div class="input-container">
+                    <textarea class="form-control auto-height" id="note-description" placeholder="Description..........."></textarea>
+                </div>
+                <div class="input-container text-left mt-3">
+                    <button type="button" class="btn btn-primary" id="save-note">Save Note</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+
+
+</body>
+</html>
